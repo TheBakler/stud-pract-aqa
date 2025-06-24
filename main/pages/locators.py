@@ -6,6 +6,16 @@ from main.pages.base_page import BasePage
 class MainPageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
 
-class LoginPageLocators(BasePage):
+class LoginPageLocators:
     FORM_LOG_ON = (By.ID, "login_form")
     FORM_SIGN_IN = (By.ID, "register_form")
+
+class ProductPageLocators:
+    BTN_ADD_BUCKET = (By.CLASS_NAME, "btn-add-to-basket") # кнопка Добавление в корзину
+    NAME_PRODUCT = (By.CSS_SELECTOR, "div.product_main h1") # название товара
+    ALERT_NAME_PRODUCT = (By.CSS_SELECTOR, "div.alertinner ") # название товара в алерте
+    PRICE_PRODUCT = (By.CSS_SELECTOR, "div.product_main") # цена товара
+    ALERT_PRICE_PRODUCT = (By.CSS_SELECTOR, ".alert-info strong") # цена товара в алерте
+
+
+
