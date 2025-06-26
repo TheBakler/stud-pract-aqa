@@ -13,8 +13,8 @@ class LoginPageLocators:
 class ProductPageLocators:
     BTN_ADD_BUCKET = (By.CLASS_NAME, "btn-add-to-basket") # кнопка Добавление в корзину
     NAME_PRODUCT = (By.CSS_SELECTOR, "div.product_main h1") # название товара
-    ALERT_NAME_PRODUCT = (By.CSS_SELECTOR, "div.alertinner ") # название товара в алерте
-    PRICE_PRODUCT = (By.CSS_SELECTOR, "div.product_main") # цена товара
+    ALERT_NAME_PRODUCT = (By.CSS_SELECTOR, ".alert-safe:nth-of-type(1) .alertinner strong") # название товара в алерте
+    PRICE_PRODUCT = (By.CSS_SELECTOR, "div.product_main .price_color") # цена товара
     ALERT_PRICE_PRODUCT = (By.CSS_SELECTOR, ".alert-info strong") # цена товара в алерте
 
 
