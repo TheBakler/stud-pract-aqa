@@ -1,5 +1,5 @@
 from .base_page import BasePage
-from main.locators import LoginPageLocators, MainPageLocators
+from .locators import LoginPageLocators
 
 
 class LoginPage(BasePage):
@@ -13,9 +13,9 @@ class LoginPage(BasePage):
         assert "login" in url, "Incorrect url, missing login path!"
 
     def should_be_login_form(self):
-        login_form = self.browser.find_element(*LoginPageLocators.FORM_LOG_ON)
+        login_form = self.browser.find_element(*LoginPageLocators.LOGIN_FORM)
         assert login_form.is_displayed(), "Login form is not displayed"
 
     def should_be_register_form(self):
-        register_form = self.browser.find_element(*LoginPageLocators.FORM_SIGN_IN)
+        register_form = self.browser.find_element(*LoginPageLocators.REGISTER_FORM)
         assert register_form.is_displayed(), "Register form is not displayed"

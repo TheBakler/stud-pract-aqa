@@ -12,3 +12,7 @@ class ProductPageLocators:
     ALERT_PRODUCT_PRICE=(By.CSS_SELECTOR, ".alert-info .alertinner strong") # цена продукта в алерте
     ALERT_PRODUCT_NAME=(By.CSS_SELECTOR,".alert-safe:nth-of-type(1) .alertinner strong") # название продукта в алерте
     SUCCESS_MESSAGE=(By.CSS_SELECTOR,".alert-success")
+class BasePageLocators:
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    USER_ICON = (By.CLASS_NAME, "icon-user")
