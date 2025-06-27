@@ -60,3 +60,7 @@ class BasePage():
             return False
 
         return True
+
+    def guest_click_button_see_basket(self):
+        assert self.is_element_present(*BasePageLocators.BTN_VIEW_BASKET), "Button - Crossing in basket is not presented!"
+        self.browser.find_element(*BasePageLocators.BTN_VIEW_BASKET).click()
