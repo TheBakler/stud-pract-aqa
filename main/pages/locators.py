@@ -6,13 +6,13 @@ class MainPageLocators:
 
 
 class LoginPageLocators:
-    LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
-    REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
-    LOGIN_LINK = (By.ID, "login_link")
-    REGISTER_EMAIL_INPUT = (By.ID, "id_registration-email")
-    REGISTER_PASSWORD_INPUT = (By.ID, "id_registration-password1")
-    REGISTER_CONF_PASSWORD_INPUT = (By.ID, "id_registration-password2")
-    REGISTER_PUSH = (By.NAME, "registration_submit")
+    LOGIN_FORM = (By.CSS_SELECTOR, "#login_form") # форма Логина
+    REGISTER_FORM = (By.CSS_SELECTOR, "#register_form") # форма Регистрации
+    LOGIN_LINK = (By.ID, "login_link") # переход на страницу Регистрации и Логина
+    REGISTER_EMAIL_INPUT = (By.ID, "id_registration-email") # поле для написания почтового ящика
+    REGISTER_PASSWORD_INPUT = (By.ID, "id_registration-password1") # поле для написания пароля
+    REGISTER_CONF_PASSWORD_INPUT = (By.ID, "id_registration-password2") # поле подтверждения Пароля
+    REGISTER_PUSH = (By.NAME, "registration_submit") # кнопка Зарегистрироваться
 
 
 class ProductPageLocators:
@@ -22,8 +22,7 @@ class ProductPageLocators:
     ALERT_PRODUCT_PRICE = (By.CSS_SELECTOR, ".alert-info .alertinner strong")  # цена продукта в алерте
     ALERT_PRODUCT_NAME = (By.CSS_SELECTOR,
                           ".alert-safe:nth-of-type(1) .alertinner strong")  # название продукта в алерте
-    SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alert-success")
-
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alert-success") # упешный алерт
 
 
 class BasePageLocators:
